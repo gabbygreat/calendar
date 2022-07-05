@@ -4,7 +4,7 @@ import 'package:intl/intl.dart' show DateFormat;
 import 'package:syncfusion_flutter_core/core.dart';
 import 'package:syncfusion_flutter_core/localizations.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
-import '../../datepicker.dart';
+import '../datepicker.dart';
 import 'picker_helper.dart';
 
 /// Used to hold the year cell widgets.

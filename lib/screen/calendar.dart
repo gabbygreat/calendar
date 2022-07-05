@@ -18,7 +18,6 @@ class CalendarScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: padding * 0.5,
         ),
-        decoration: const BoxDecoration(),
         height: MediaQuery.of(context).size.height * 0.7,
         child: Column(
           mainAxisSize: MainAxisSize.max,
