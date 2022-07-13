@@ -1,17 +1,13 @@
-String getDayInIgbo({DateTime? date, bool useDate = true, int theDay = 1}) {
-  int weekday = 1;
-  if (useDate) {
-    weekday = date!.weekday - 1;
-  } else {
-    weekday = theDay;
-  }
+String getDayInIgbo({DateTime? date, bool reduce = false}) {
+  int test1 = date!.millisecondsSinceEpoch;
+  int day = Duration(milliseconds: test1).inDays.remainder(4);
 
   final Map<int, String> igboDays = {
-    0: 'Eke',
-    1: 'Oye',
-    2: 'Afor',
-    3: 'Nkwo',
+    0: reduce ? 'Eke' : 'Nkwo',
+    1: reduce ? 'Oye' : 'Eke',
+    2: reduce ? 'Afor' : 'Oye',
+    3: reduce ? 'Nkwo' : 'Afor',
   };
-  final day = weekday.remainder(4);
+
   return igboDays[day] ?? '';
 }

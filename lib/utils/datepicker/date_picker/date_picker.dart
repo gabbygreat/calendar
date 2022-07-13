@@ -7332,9 +7332,10 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
             }
 
             _controller.selectedDates = _getSelectedDates(_selectedDates);
-            if (!isSameSelectedDate)
+            if (!isSameSelectedDate) {
               _raiseSelectionChangedCallback(widget,
                   value: _controller.selectedDates);
+            }
           }
           break;
         case DateRangePickerSelectionMode.range:
@@ -7351,9 +7352,10 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
             }
 
             _controller.selectedRange = _selectedRange;
-            if (!isSameSelectedDate)
+            if (!isSameSelectedDate) {
               _raiseSelectionChangedCallback(widget,
                   value: _controller.selectedRange);
+            }
           }
           break;
         case DateRangePickerSelectionMode.multiRange:
@@ -7370,9 +7372,10 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
             }
 
             _controller.selectedRanges = _getSelectedRanges(_selectedRanges);
-            if (!isSameSelectedDate)
+            if (!isSameSelectedDate) {
               _raiseSelectionChangedCallback(widget,
                   value: _controller.selectedRanges);
+            }
           }
       }
     }

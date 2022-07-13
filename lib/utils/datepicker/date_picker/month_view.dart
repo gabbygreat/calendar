@@ -1,3 +1,4 @@
+import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -53,7 +54,9 @@ class MonthView extends StatefulWidget {
       this.weekNumberStyle,
       this.isMobilePlatform,
       this.disableDatesCollection,
-      this.extendableRangeSelectionDirection);
+      this.extendableRangeSelectionDirection,
+      {Key? key})
+      : super(key: key);
 
   /// Defines the month row count.
   final int rowCount;
@@ -4492,7 +4495,7 @@ void _drawMonthCellsAndSelection(PaintingContext context, Size size,
             cellWidth, cellHeight);
       }
 
-      String igboDay = getDayInIgbo(theDay: date.day, useDate: false);
+      String igboDay = getDayInIgbo(date: date, reduce: true);
 
       final TextSpan dateText = TextSpan(
         text: date.day.toString(),
