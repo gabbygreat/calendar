@@ -11,7 +11,7 @@ import 'picker_helper.dart';
 class YearView extends StatefulWidget {
   /// Constructor for create the year view widget used to hold the year cell
   /// widgets.
-  const YearView(
+   const YearView(
       this.visibleDates,
       this.cellStyle,
       this.minDate,
@@ -46,7 +46,7 @@ class YearView extends StatefulWidget {
       this.width,
       this.height,
       this.disableDatesCollection,
-      this.extendableRangeSelectionDirection);
+      this.extendableRangeSelectionDirection, {Key? key}) : super(key: key);
 
   /// Defines the year cell style.
   final dynamic cellStyle;
