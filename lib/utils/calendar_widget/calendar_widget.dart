@@ -1,3 +1,5 @@
+// ignore_for_file: unused_element
+
 import 'package:flutter/material.dart';
 import 'package:paint/utils/constants/color.dart';
 import 'package:paint/utils/datepicker/date_picker/date_picker.dart';
@@ -101,10 +103,10 @@ class CalendarWidget extends StatelessWidget {
 
 class _MonthCellDecoration extends Decoration {
   const _MonthCellDecoration({
-    this.borderColor,
     this.backgroundColor,
     required this.showIndicator,
     this.indicatorColor,
+    this.borderColor,
   });
 
   final Color? borderColor;

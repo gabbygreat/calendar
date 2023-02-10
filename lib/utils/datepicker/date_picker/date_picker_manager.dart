@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_core/core.dart';
@@ -564,7 +566,6 @@ class DateRangePickerMonthViewSettings with Diagnosticable {
       this.dayFormat = 'EE',
       this.viewHeaderHeight = 30,
       @Deprecated('Use selectionRadius property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.selectionRadius = -1,
       this.showTrailingAndLeadingDates = false,
       this.viewHeaderStyle = const DateRangePickerViewHeaderStyle(),
@@ -1766,23 +1767,18 @@ class DateRangePickerMonthCellStyle with Diagnosticable {
   /// [SfDateRangePicker].
   const DateRangePickerMonthCellStyle(
       {@Deprecated('Use selectionColor property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.selectionColor,
       @Deprecated('Use startRangeSelectionColor property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.startRangeSelectionColor,
       @Deprecated('Use endRangeSelectionColor property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.endRangeSelectionColor,
       @Deprecated('Use rangeSelectionColor property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.rangeSelectionColor,
       this.textStyle,
       this.todayTextStyle,
       this.trailingDatesTextStyle,
       this.leadingDatesTextStyle,
       @Deprecated('Use selectionTextStyle property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.selectionTextStyle,
       this.disabledDatesTextStyle,
       this.blackoutDateTextStyle,
@@ -1796,7 +1792,6 @@ class DateRangePickerMonthCellStyle with Diagnosticable {
       this.trailingDatesDecoration,
       this.leadingDatesDecoration,
       @Deprecated('Use rangeTextStyle property in SfDateRangePicker')
-          // ignore: deprecated_member_use, deprecated_member_use_from_same_package
           this.rangeTextStyle,
       this.weekendDatesDecoration});
 
