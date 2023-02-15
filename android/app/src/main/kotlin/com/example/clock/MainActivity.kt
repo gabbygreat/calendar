@@ -1,4 +1,4 @@
-package com.example.clock
+package com.pycify.calendar
 
 import io.flutter.embedding.android.FlutterActivity
 
